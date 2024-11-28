@@ -8,6 +8,10 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ## Latest Articles
 
+### [How To Optimize Backend Service Performance Using API Path Patterns?](article3.md)
+Learn how to optimize backend performance and scalability by leveraging API path patterns to separate user-driven and system-generated requests.
+
+
 ### [Building a Platform from the Ground Up: Key Lessons from My Greenfield Journey – Part 1](article2.md)
 Taking on a greenfield project is an exciting challenge. In this article, I share key lessons learned from building a platform from scratch, focusing on team dynamics, decision-making, and best practices for success.
 
