@@ -8,6 +8,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ## Latest Articles
 
+### [Five Years Brewing: A Starbucks Memoir](article4.md)
+A heartfelt reflection on five years at Starbucks, celebrating growth, team culture, and meaningful connections.
+
 ### [How To Optimize Backend Service Performance Using API Path Patterns?](article3.md)
 Learn how to optimize backend performance and scalability by leveraging API path patterns to separate user-driven and system-generated requests.
 
