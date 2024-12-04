@@ -8,6 +8,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ## Latest Articles
 
+### [The Power of Kafka Keys: Why Choosing the Right One Matters](article5.md)
+ Explores the importance of choosing the right Kafka key to ensure efficient data distribution, maintain message order, and optimize system performance and reliability.
+
 ### [Five Years Brewing: A Starbucks Memoir](article4.md)
 A heartfelt reflection on five years at Starbucks, celebrating growth, team culture, and meaningful connections.
 
