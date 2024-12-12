@@ -7,7 +7,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 ---
 
 ## Latest Articles
-
+### [What is Collaboration?](article6.md)
+An in-depth exploration of collaboration, its role in engineering, and how it drives the success of high-performing teams.
+ 
 ### [The Power of Kafka Keys: Why Choosing the Right One Matters](article5.md)
  Explores the importance of choosing the right Kafka key to ensure efficient data distribution, maintain message order, and optimize system performance and reliability.
 
