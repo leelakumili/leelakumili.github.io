@@ -7,6 +7,8 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 ---
 
 ## Latest Articles
+### [Keeping Databases Lean with TTL: Practical Insights and Strategies](article7.md)
+Explore how Time-To-Live (TTL) optimizes database performance by automating data expiration and cleanup for scalable, efficient systems.
 ### [What is Collaboration?](article6.md)
 An in-depth exploration of collaboration, its role in engineering, and how it drives the success of high-performing teams.
  
