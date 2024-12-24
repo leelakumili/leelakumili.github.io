@@ -7,6 +7,8 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 ---
 
 ## Latest Articles
+### [Unwrapping Lessons from 2024: A Holiday Guide for Engineers](article8.md)
+Reflecting on 2024, this article unwraps lessons, tools, and insights that enriched my engineering journey, offering actionable takeaways to inspire growth.
 ### [Keeping Databases Lean with TTL: Practical Insights and Strategies](article7.md)
 Explore how Time-To-Live (TTL) optimizes database performance by automating data expiration and cleanup for scalable, efficient systems.
 ### [What is Collaboration?](article6.md)
