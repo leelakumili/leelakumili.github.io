@@ -7,6 +7,8 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 ---
 
 ## Latest Articles
+### [Looking Ahead to 2025: Building on the Lessons of 2024](article9.md)
+A reflection on 2024's lessons and a forward-looking plan for personal and professional growth in 2025.
 ### [Unwrapping Lessons from 2024: A Holiday Guide for Engineers](article8.md)
 Reflecting on 2024, this article unwraps lessons, tools, and insights that enriched my engineering journey, offering actionable takeaways to inspire growth.
 ### [Keeping Databases Lean with TTL: Practical Insights and Strategies](article7.md)
