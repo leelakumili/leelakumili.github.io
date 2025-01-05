@@ -1,3 +1,4 @@
+![Banner](/assets/2025/2025_article1.png)
 # Scaling Microservices: Message-Driven vs Event-Driven Architecture
 
 Building a system to scale requires choosing the right architectural pattern, especially for large-scale platforms with many microservices in the backend to support growing complexity. However, I've seen many engineers use the terms 'message' and 'event' interchangeably. Let’s demystify these concepts and explore two popular choices—message-driven and event-driven architectures—to determine which one is the best fit for your project.
