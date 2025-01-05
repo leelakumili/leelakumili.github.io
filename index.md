@@ -6,7 +6,7 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
-### [Scaling Microservices: Message-Driven vs Event-Driven Architecture](article1.md)
+### [Scaling Microservices: Message-Driven vs Event-Driven Architecture](2025/article1.md)
 Demystifying message-driven vs event-driven architectures to help you scale microservices effectively.
 
 ## 2024 Articles
