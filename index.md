@@ -5,8 +5,11 @@ Welcome to my blog where I share insights on software development, architecture,
 Feel free to browse through my articles and stay tuned for more insights in the future!
 
 ---
+## 2025 Articles
+### [Scaling Microservices: Message-Driven vs Event-Driven Architecture](article1.md)
+Demystifying message-driven vs event-driven architectures to help you scale microservices effectively.
 
-## Latest Articles
+## 2024 Articles
 ### [Looking Ahead to 2025: Building on the Lessons of 2024](article9.md)
 A reflection on 2024's lessons and a forward-looking plan for personal and professional growth in 2025.
 ### [Unwrapping Lessons from 2024: A Holiday Guide for Engineers](article8.md)
