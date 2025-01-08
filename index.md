@@ -6,6 +6,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+### [From MVP to MAC: The Future of Building Products Customers Love](2025/article2.md)
+We’re still building "good enough" products because the focus has been on speed and minimal validation, but the shift to MAC is about creating fully integrated, automated solutions that customers truly love and rely on from day one.
+
 ### [Scaling Microservices: Message-Driven vs Event-Driven Architecture](2025/article1.md)
 Demystifying message-driven vs event-driven architectures to help you scale microservices effectively.
 
