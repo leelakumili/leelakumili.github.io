@@ -6,6 +6,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+### [AI at Work: Leveraging Tools Without Crossing Boundaries](2025/article3.md)
+Engineers face the challenge of balancing innovation with responsibility as AI tools reshape productivity and decision-making in the workplace.
+
 ### [From MVP to MAC: The Future of Building Products Customers Love](2025/article2.md)
 We’re still building "good enough" products because the focus has been on speed and minimal validation, but the shift to MAC is about creating fully integrated, automated solutions that customers truly love and rely on from day one.
 
