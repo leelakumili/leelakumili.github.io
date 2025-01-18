@@ -1,4 +1,4 @@
-![Banner](/assets/2025/aiatwork.png)
+![Banner](/assets/2025/aitatwork.png)
 # AI at Work: Leveraging Tools Without Crossing Boundaries
 
 In a world where AI tools like ChatGPT are reshaping how we search for and interact with information—much like Google revolutionized search engines—AI tools have become invaluable partners in boosting productivity and enhancing decision-making. When used thoughtfully, these tools can amplify human intelligence by automating repetitive tasks, offering simplified explanations of complex concepts, and helping evaluate tools and frameworks more effectively.
