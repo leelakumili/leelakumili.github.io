@@ -1,9 +1,7 @@
+## LLM vs. NLP vs. Transformer
 
-
-## AI vs. ML vs. DL
-
-| Feature            | AI (Artificial Intelligence) | ML (Machine Learning) | DL (Deep Learning) |
-|--------------------|----------------------------|------------------------|---------------------|
-| **Definition**     | Broad field of building intelligent systems | A subset of AI where models learn from data | A subset of ML using deep neural networks |
-| **Key Characteristic** | Can include rule-based systems & decision-making | Uses algorithms to find patterns & make predictions | Uses multi-layered neural networks for complex tasks |
-| **Example**       | Chatbots, self-driving cars, fraud detection | Spam email filtering, recommendation systems | Image recognition, speech-to-text conversion |
+| Feature            | LLM (Large Language Model) | NLP (Natural Language Processing) | Transformer |
+|--------------------|--------------------------|----------------------------------|------------|
+| **Definition**     | A specific type of AI model trained on vast text data for generating language | The broader field of AI enabling machines to understand & process language | A deep learning architecture used to train LLMs |
+| **Key Characteristic** | Pre-trained on massive datasets, capable of generating text | Includes text analysis, speech recognition, sentiment analysis | Enables efficient processing of sequential data (e.g., ChatGPT is based on this) |
+| **Example**       | GPT-4, Gemini | Speech-to-text, machine translation, chatbots | GPT |
