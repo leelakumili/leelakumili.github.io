@@ -1,7 +1,7 @@
-## LLM vs. NLP vs. Transformer
+## Fine-Tuning vs. Prompt Engineering vs. RAG (Retrieval-Augmented Generation)
 
-| Feature            | LLM (Large Language Model) | NLP (Natural Language Processing) | Transformer |
-|--------------------|--------------------------|----------------------------------|------------|
-| **Definition**     | A specific type of AI model trained on vast text data for generating language | The broader field of AI enabling machines to understand & process language | A deep learning architecture used to train LLMs |
-| **Key Characteristic** | Pre-trained on massive datasets, capable of generating text | Includes text analysis, speech recognition, sentiment analysis | Enables efficient processing of sequential data (e.g., ChatGPT is based on this) |
-| **Example**       | GPT-4, Gemini | Speech-to-text, machine translation, chatbots | GPT |
+| Feature            | Fine-Tuning | Prompt Engineering | RAG (Retrieval-Augmented Generation) |
+|--------------------|------------|--------------------|------------------------------------|
+| **Definition**     | Adapting a pre-trained model to a specific dataset or task | Crafting inputs (prompts) to get desired responses from an AI model | Enhancing AI outputs by integrating real-time external data |
+| **Key Characteristic** | Changes model weights for domain-specific improvements | Does not change the model, only refines how input is structured | Mixes static model knowledge with fresh, retrieved data |
+| **Example**       | Training GPT on legal documents for law-related queries | Adjusting prompts to get more accurate AI responses | Using a search tool alongside AI for up-to-date answers |
