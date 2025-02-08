@@ -61,6 +61,8 @@ This article provides a **concise glossary of AI terms**, key **comparisons** to
 
 Artificial Intelligence (AI) is transforming the way we work, and understanding its foundational concepts is crucial for engineers. Whether you're developing AI-driven applications or integrating AI capabilities into your systems, familiarity with key terms helps in effectively communicating with peers and making informed technical decisions. This glossary covers essential AI concepts, from fundamental terms to the latest buzzwords.
 
+
+
 ## General AI Terms
 
 | Feature  | AI (Artificial Intelligence)  | ML (Machine Learning)  | DL (Deep Learning)  |
@@ -71,6 +73,9 @@ Artificial Intelligence (AI) is transforming the way we work, and understanding 
 
 
 
+
+
+
 ## AI Models & Architectures
 
 | Feature  | LLM  | NLP  | Transformer  |
@@ -78,6 +83,8 @@ Artificial Intelligence (AI) is transforming the way we work, and understanding 
 | **Definition** | AI model trained on vast text data for generating language | The field of AI enabling machines to understand & process language | Deep learning architecture used to train LLMs |
 | **Key Characteristic** | Pre-trained on massive datasets, capable of generating text | Includes text analysis, speech recognition, sentiment analysis | Enables efficient processing of sequential data (e.g., ChatGPT is based on this) |
 | **Example** | GPT-4, Claude, Gemini | Speech-to-text, machine translation, chatbots | BERT, GPT, T5 |
+
+
 
 
 
