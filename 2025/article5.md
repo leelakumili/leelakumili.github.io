@@ -1,7 +1,7 @@
-## Fine-Tuning vs. Prompt Engineering vs. RAG (Retrieval-Augmented Generation)
+## Chatbot vs. Virtual Assistant vs. AI Agent
 
-| Feature            | Fine-Tuning | Prompt Engineering | RAG (Retrieval-Augmented Generation) |
-|--------------------|------------|--------------------|------------------------------------|
-| **Definition**     | Adapting a pre-trained model to a specific dataset or task | Crafting inputs (prompts) to get desired responses from an AI model | Enhancing AI outputs by integrating real-time external data |
-| **Key Characteristic** | Changes model weights for domain-specific improvements | Does not change the model, only refines how input is structured | Mixes static model knowledge with fresh, retrieved data |
-| **Example**       | Training GPT on legal documents for law-related queries | Adjusting prompts to get more accurate AI responses | Using a search tool alongside AI for up-to-date answers |
+| Feature            | Chatbot | Virtual Assistant | AI Agent |
+|--------------------|---------|------------------|----------|
+| **Definition**     | AI designed for text-based conversations | AI that assists with tasks like scheduling, reminders, and smart home control | AI that can independently execute tasks & make decisions |
+| **Key Characteristic** | Simple Q&A or rule-based responses | More advanced, can handle voice commands & integrate apps | Can analyze data, take actions, and learn over time |
+| **Example**       | Website customer support bot | Siri, Alexa, Google Assistant | AI stock trading bot, self-driving car system |
