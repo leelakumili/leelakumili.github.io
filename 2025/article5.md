@@ -55,46 +55,64 @@ This article provides a **concise glossary of AI terms**, key **comparisons** to
 
 ## **🤔 Key Comparisons: Clarifying Common AI Concepts**  
 
-| Feature                | AI  | ML   | DL   |
-|------------------------|------|------|------|
-| **Definition**         | Broad field of intelligent systems | AI subset where models learn from data | ML subset using deep neural networks |
-| **Example**           | Chatbots, fraud detection | Recommendation systems, anomaly detection | Image recognition, speech-to-text |
+# AI Glossary: Essential Terms Engineers Should Know
+
+## Introduction
+
+Artificial Intelligence (AI) is transforming the way we work, and understanding its foundational concepts is crucial for engineers. Whether you're developing AI-driven applications or integrating AI capabilities into your systems, familiarity with key terms helps in effectively communicating with peers and making informed technical decisions. This glossary covers essential AI concepts, from fundamental terms to the latest buzzwords.
+
+## General AI Terms
+
+| Feature  | AI (Artificial Intelligence)  | ML (Machine Learning)  | DL (Deep Learning)  |
+|----------|--------------------------------|--------------------------|--------------------------|
+| **Definition** | Broad field of building intelligent systems | A subset of AI where models learn from data | A subset of ML using deep neural networks |
+| **Key Characteristic** | Can include rule-based systems & decision-making | Uses algorithms to find patterns & make predictions | Uses multi-layered neural networks for complex tasks |
+| **Example** | Chatbots, self-driving cars, fraud detection | Spam email filtering, recommendation systems | Image recognition, speech-to-text conversion |
 
 
 
-| Feature                | LLM   | NLP   | Transformer  |
-|------------------------|------|------|------|
-| **Definition**         | Large AI trained for text generation | AI focused on language understanding | Deep learning architecture for text models |
-| **Example**           | GPT, Claude, Gemini | Speech-to-text, sentiment analysis | BERT, GPT, T5 |
+## AI Models & Architectures
+
+| Feature  | LLM  | NLP  | Transformer  |
+|----------|--------|----|-------------|
+| **Definition** | AI model trained on vast text data for generating language | The field of AI enabling machines to understand & process language | Deep learning architecture used to train LLMs |
+| **Key Characteristic** | Pre-trained on massive datasets, capable of generating text | Includes text analysis, speech recognition, sentiment analysis | Enables efficient processing of sequential data (e.g., ChatGPT is based on this) |
+| **Example** | GPT-4, Claude, Gemini | Speech-to-text, machine translation, chatbots | BERT, GPT, T5 |
 
 
 
-| Feature                | Chatbot  | Virtual Assistant | AI Agent  |
-|------------------------|------|------|------|
-| **Definition**         | Text-based AI interaction | AI managing personal tasks | AI independently making decisions |
-| **Example**           | Website support bots | Siri, Alexa | AI-powered trading bots |
+
+## Training & Optimization
+
+| Feature  | Fine-Tuning  | Prompt Engineering  | RAG  |
+|----------|---------------|----------------------|---------|
+| **Definition** | Adapting a pre-trained model to a specific dataset or task | Crafting inputs (prompts) to get desired responses from an AI model | Enhancing AI outputs by integrating real-time external data |
+| **Key Characteristic** | Changes model weights for domain-specific improvements | Does not change the model, only refines how input is structured | Mixes static model knowledge with fresh, retrieved data |
+| **Example** | Training GPT on legal documents for law-related queries | Adjusting prompts to get more accurate AI responses | Using a search tool alongside AI for up-to-date answers |
 
 
 
-| Feature                | AI Crew  | AI Orchestration  | Autonomous AI Agents  |
-|------------------------|------------|--------------------|--------------------------|
-| **Definition**         | Group of AI models collaborating | Coordinating multiple AI models | AI making decisions without human input |
-| **Example**           | AI research assistants working together | Managing different AI workflows | Self-driving AI |
 
----
 
-## **🛠️ Why These Terms Matter for Engineers**  
+## AI Applications & Use Cases
 
-Many engineers assume AI concepts are only relevant to data scientists. However, as AI is embedded in modern applications, understanding these terms is valuable for:  
-✔️ **Architecting AI-Integrated Systems** – Designing scalable systems that incorporate AI components.  
-✔️ **Collaborating with AI Teams** – Understanding ML and AI constraints when building backend APIs or data pipelines.  
-✔️ **Optimizing AI Workflows** – Fine-tuning AI outputs through better prompts or efficient workflows.  
-✔️ **Staying Ahead in Engineering Careers** – AI is evolving rapidly; familiarity with these concepts keeps you adaptable.  
+| Feature  | Chatbot  | Virtual Assistant  | AI Agent  |
+|----------|-----------|----------------|----------|
+| **Definition** | AI designed for text-based conversations | AI that assists with tasks like scheduling, reminders, and smart home control | AI that can independently execute tasks & make decisions |
+| **Key Characteristic** | Simple Q&A or rule-based responses | More advanced, can handle voice commands & integrate apps | Can analyze data, take actions, and learn over time |
+| **Example** | Website customer support bot | Siri, Alexa, Google Assistant | AI-powered task automation agents |
 
----
 
-## **💡 Final Thoughts**  
 
-AI is reshaping how we build software. Even if you’re not directly working on ML models, foundational AI literacy helps you **collaborate more effectively**, **make better design choices**, and **future-proof your career**.  
 
-**What AI concepts have you encountered recently in your work?** Drop a comment and let’s discuss!  
+## Key Comparisons: Clarifying Common AI Concepts
+
+
+
+### AI Orchestration vs. AI Crew vs. Autonomous AI Agents
+
+| Feature  | AI Orchestration  | AI Crew  | Autonomous AI Agents  |
+|----------|-----------------|---------|----------------------|
+| **Definition** | Managing and coordinating multiple AI models or agents | A set of AI agents working together to complete a complex task | AI that can independently complete tasks and make decisions |
+| **Key Characteristic** | Focuses on optimizing workflow and task execution across multiple AIs | Collective intelligence from multiple specialized AIs | Self-sufficient, learns and adapts without direct supervision |
+| **Example** | AI managing various chatbots, recommendation engines, and search tools | AI models collaborating to analyze documents, generate reports, and fact-check | AI trading bots executing market strategies without human input |
