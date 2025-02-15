@@ -7,7 +7,7 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 ---
 ## 2025 Articles
 
-### [Compare](2025/article3.md)
+### [Compare](2025/compare.md)
 
 ### [AI at Work: Leveraging Tools Without Crossing Boundaries](2025/article3.md)
 Engineers face the challenge of balancing innovation with responsibility as AI tools reshape productivity and decision-making in the workplace.
