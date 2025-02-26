@@ -6,6 +6,8 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+### [DeepSeek: Innovation Born from Necessity](2025/article5.md)
+A deep dive into DeepSeek’s innovative AI advancements, overcoming hardware constraints to drive efficiency and performance.
 
 ### [Building the Baseline – The Foundation of Observability](2025/article4.md)
 Explores how to establish a strong observability baseline to detect anomalies, empower on-call engineers, and build a resilient system.
