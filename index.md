@@ -6,6 +6,10 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+### [From Chaos to Control: How to Manage Transactions in Event-Driven Systems](2025/article6.md)
+A practical guide to managing transactions in event-driven systems, tackling challenges like data consistency, idempotency, retries, and event duplication.
+
+
 ### [DeepSeek: Innovation Born from Necessity](2025/article5.md)
 A deep dive into DeepSeek’s innovative AI advancements, overcoming hardware constraints to drive efficiency and performance.
 
