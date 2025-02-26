@@ -7,6 +7,8 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 ---
 ## 2025 Articles
 
+### [Building the Baseline – The Foundation of Observability](2025/article4.md)
+Explores how to establish a strong observability baseline to detect anomalies, empower on-call engineers, and build a resilient system.
 
 ### [AI at Work: Leveraging Tools Without Crossing Boundaries](2025/article3.md)
 Engineers face the challenge of balancing innovation with responsibility as AI tools reshape productivity and decision-making in the workplace.
