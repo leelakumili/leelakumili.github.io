@@ -6,6 +6,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+### [The DNA of High-Quality Code: How Engineers Build Sustainable Software](2025/article11.md)
+A practical guide to the principles, mindset, and habits that help engineers write sustainable, high-quality code that stands the test of time.
+
 ### [The Evolution of Prompt Engineering: What Software Engineers Need to Know](2025/article10.md)
 A look at how prompt engineering is evolving from a tactical skill into a strategic approach for integrating AI into software engineering workflows.
 
