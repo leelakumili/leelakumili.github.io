@@ -6,6 +6,11 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+### [The Collaboration Chapters](2025/article9.md)
+An essential guide to mastering synchronous, asynchronous, and hybrid communication patterns that power scalable, resilient microservice architectures.
+
+### [10 Essential Communication Patterns for Microservices](2025/article8.md)
+A practical guide to handling backpressure in distributed systems using rate limiting, queues, scaling, flow control, circuit breakers, and load shedding.
 
 ### [When Systems Hit a Traffic Jam: How to Handle Backpressure Effectively](2025/article7.md)
 A practical guide to handling backpressure in distributed systems using rate limiting, queues, scaling, flow control, circuit breakers, and load shedding.
