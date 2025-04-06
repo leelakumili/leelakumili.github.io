@@ -1,3 +1,4 @@
+![Banner](/assets/2025/unittochaos.png)
 # From Unit Tests to Chaos Testing: Optimizing Mocking Strategies for Microservices
 
 Microservices have transformed system design, offering scalability and modularity that allows for rapid evolution. However, this transformation comes at a cost—distributed systems introduce unique challenges, especially in testing. Unlike monolithic applications, where components are tightly coupled within a single process, microservices require inter-service communication, making it difficult to test in isolation and ensure resilience across the system.
