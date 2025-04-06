@@ -6,6 +6,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+### [From Unit Tests to Chaos Testing: Optimizing Mocking Strategies for Microservices](2025/article12.md)
+A practical guide to mocking strategies in microservices, from unit tests to chaos testing, to build resilient and reliable distributed systems.
+
 ### [The DNA of High-Quality Code: How Engineers Build Sustainable Software](2025/article11.md)
 A practical guide to the principles, mindset, and habits that help engineers write sustainable, high-quality code that stands the test of time.
 
