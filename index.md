@@ -6,6 +6,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+### [The Evolution of Prompt Engineering: What Software Engineers Need to Know](2025/article10.md)
+A look at how prompt engineering is evolving from a tactical skill into a strategic approach for integrating AI into software engineering workflows.
+
 ### [The Collaboration Chapters](2025/article9.md)
 An essential guide to mastering synchronous, asynchronous, and hybrid communication patterns that power scalable, resilient microservice architectures.
 
