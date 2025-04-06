@@ -1,4 +1,4 @@
-![Banner](/assets/2025/Screen Shot 2025-04-05 at 10.42.25 PM.png)
+![Banner](/assets/2025/10microservice.png)
 # 10 Essential Communication Patterns for Microservices
 
 Microservices thrive on communication. Every service interaction impacts performance, reliability, and scalability. A well-designed system enables seamless, efficient communication, while poor design choices lead to tight coupling, cascading failures, and hard-to-debug bottlenecks.
