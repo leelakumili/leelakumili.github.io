@@ -6,6 +6,13 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 
 ---
 ## 2025 Articles
+
+### [The Engineer’s Guide to Getting Buy-In and Driving Change](2025/article14.md)
+A personal reflection on how engineers can grow their influence and drive impact through communication, trust, and relationship-building.
+
+### [Introducing Model Control Protocol (MCP)](2025/article13.md)
+A deep dive into how MCP enables efficient coordination between AI models, inspired by microservice architecture principles.
+
 ### [From Unit Tests to Chaos Testing: Optimizing Mocking Strategies for Microservices](2025/article12.md)
 A practical guide to mocking strategies in microservices, from unit tests to chaos testing, to build resilient and reliable distributed systems.
 
