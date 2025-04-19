@@ -7,6 +7,9 @@ Feel free to browse through my articles and stay tuned for more insights in the 
 ---
 ## 2025 Articles
 
+### 10 Microservice Anti-Patterns Every Engineer Must  Avoid](2025/article15.md)
+This article explores 10 common microservice anti-patterns, their impact on system performance, and practical solutions to avoid them for more scalable and maintainable architectures.
+
 ### [The Engineer’s Guide to Getting Buy-In and Driving Change](2025/article14.md)
 A personal reflection on how engineers can grow their influence and drive impact through communication, trust, and relationship-building.
 
