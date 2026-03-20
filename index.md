@@ -1,92 +1,113 @@
-# Welcome to My Blog
+# Leela Kumili
 
-Welcome to my blog where I share insights on software development, architecture, microservices, greenfield projects, and much more. This space is dedicated to documenting my journey, lessons learned, and the challenges faced while building scalable and resilient platforms.
+**Engineering Lead → Engineering Manager** · Distributed Systems · AI in Production · Platform Engineering
 
-Feel free to browse through my articles and stay tuned for more insights in the future!
+I build the systems that power scale - and the teams that keep them running.
 
----
-## 2025 Articles
-
-### [10 Microservice Anti-Patterns Every Engineer Must  Avoid](2025/article15.md)
-This article explores 10 common microservice anti-patterns, their impact on system performance, and practical solutions to avoid them for more scalable and maintainable architectures.
-
-### [The Engineer’s Guide to Getting Buy-In and Driving Change](2025/article14.md)
-A personal reflection on how engineers can grow their influence and drive impact through communication, trust, and relationship-building.
-
-### [Introducing Model Control Protocol (MCP)](2025/article13.md)
-A deep dive into how MCP enables efficient coordination between AI models, inspired by microservice architecture principles.
-
-### [From Unit Tests to Chaos Testing: Optimizing Mocking Strategies for Microservices](2025/article12.md)
-A practical guide to mocking strategies in microservices, from unit tests to chaos testing, to build resilient and reliable distributed systems.
-
-### [The DNA of High-Quality Code: How Engineers Build Sustainable Software](2025/article11.md)
-A practical guide to the principles, mindset, and habits that help engineers write sustainable, high-quality code that stands the test of time.
-
-### [The Evolution of Prompt Engineering: What Software Engineers Need to Know](2025/article10.md)
-A look at how prompt engineering is evolving from a tactical skill into a strategic approach for integrating AI into software engineering workflows.
-
-### [The Collaboration Chapters](2025/article9.md)
-An essential guide to mastering synchronous, asynchronous, and hybrid communication patterns that power scalable, resilient microservice architectures.
-
-### [10 Essential Communication Patterns for Microservices](2025/article8.md)
-A practical guide to handling backpressure in distributed systems using rate limiting, queues, scaling, flow control, circuit breakers, and load shedding.
-
-### [When Systems Hit a Traffic Jam: How to Handle Backpressure Effectively](2025/article7.md)
-A practical guide to handling backpressure in distributed systems using rate limiting, queues, scaling, flow control, circuit breakers, and load shedding.
-
-
-### [From Chaos to Control: How to Manage Transactions in Event-Driven Systems](2025/article6.md)
-A practical guide to managing transactions in event-driven systems, tackling challenges like data consistency, idempotency, retries, and event duplication.
-
-
-### [DeepSeek: Innovation Born from Necessity](2025/article5.md)
-A deep dive into DeepSeek’s innovative AI advancements, overcoming hardware constraints to drive efficiency and performance.
-
-### [Building the Baseline – The Foundation of Observability](2025/article4.md)
-Explores how to establish a strong observability baseline to detect anomalies, empower on-call engineers, and build a resilient system.
-
-### [AI at Work: Leveraging Tools Without Crossing Boundaries](2025/article3.md)
-Engineers face the challenge of balancing innovation with responsibility as AI tools reshape productivity and decision-making in the workplace.
-
-### [From MVP to MAC: The Future of Building Products Customers Love](2025/article2.md)
-We’re still building "good enough" products because the focus has been on speed and minimal validation, but the shift to MAC is about creating fully integrated, automated solutions that customers truly love and rely on from day one.
-
-### [Scaling Microservices: Message-Driven vs Event-Driven Architecture](2025/article1.md)
-Demystifying message-driven vs event-driven architectures to help you scale microservices effectively.
-
-## 2024 Articles
-### [Looking Ahead to 2025: Building on the Lessons of 2024](article9.md)
-A reflection on 2024's lessons and a forward-looking plan for personal and professional growth in 2025.
-### [Unwrapping Lessons from 2024: A Holiday Guide for Engineers](article8.md)
-Reflecting on 2024, this article unwraps lessons, tools, and insights that enriched my engineering journey, offering actionable takeaways to inspire growth.
-### [Keeping Databases Lean with TTL: Practical Insights and Strategies](article7.md)
-Explore how Time-To-Live (TTL) optimizes database performance by automating data expiration and cleanup for scalable, efficient systems.
-### [What is Collaboration?](article6.md)
-An in-depth exploration of collaboration, its role in engineering, and how it drives the success of high-performing teams.
- 
-### [The Power of Kafka Keys: Why Choosing the Right One Matters](article5.md)
- Explores the importance of choosing the right Kafka key to ensure efficient data distribution, maintain message order, and optimize system performance and reliability.
-
-### [Five Years Brewing: A Starbucks Memoir](article4.md)
-A heartfelt reflection on five years at Starbucks, celebrating growth, team culture, and meaningful connections.
-
-### [How To Optimize Backend Service Performance Using API Path Patterns?](article3.md)
-Learn how to optimize backend performance and scalability by leveraging API path patterns to separate user-driven and system-generated requests.
-
-
-### [Building a Platform from the Ground Up: Key Lessons from My Greenfield Journey – Part 1](article2.md)
-Taking on a greenfield project is an exciting challenge. In this article, I share key lessons learned from building a platform from scratch, focusing on team dynamics, decision-making, and best practices for success.
-
-### [Is Event-Driven Architecture a One-Size-Fits-All Solution for Microservices?](article1.md)
-Event-driven architecture is gaining popularity in the world of microservices, but is it really a one-size-fits-all solution? In this article, I explore when event-driven design works best and when synchronous API calls might be the better choice.
+Lead Engineer at **Starbucks** (Rewards Platform) · AI Champion · [InfoQ Editor](https://www.infoq.com/profile/Leela-Kumili/#news) · Conference Speaker · Creator of **[The Engineer's Path](https://www.linkedin.com/newsletters/the-engineer-s-path-7166581395236294656/)** newsletter
 
 ---
 
-## About Me
+## Find Me
 
-Hi, I’m Leela. I’m a software engineer and architect with a passion for building scalable and resilient systems. Over the years, I’ve worked on various projects involving microservices, cloud platforms, and distributed systems.
-I started this blog to share my experiences, knowledge, and lessons learned from my professional journey.
-
-Feel free connect with me on [LinkedIn](https://www.linkedin.com/in/leelakumili/).
+[LinkedIn](https://www.linkedin.com/in/leelakumili/) · [Medium](https://medium.com/@leela.kumili) · [Twitter / X](https://twitter.com/KumiliLeela) · [InfoQ](https://www.infoq.com/profile/Leela-Kumili/#news)
 
 ---
+
+## 📬 The Engineer's Path - Newsletter
+
+Weekly writing for engineers navigating the gap between senior IC and engineering manager.
+Technical depth. Leadership honesty. No fluff.
+
+**Topics:** Distributed Systems · AI in Production · Platform Engineering · Engineering Leadership · Career Growth
+
+→ **[Subscribe on LinkedIn](https://www.linkedin.com/newsletters/the-engineer-s-path-7166581395236294656/)**
+
+*Also cross-posted to [Medium](https://medium.com/@leela.kumili) and [Twitter](https://twitter.com/KumiliLeela). InfoQ articles syndicated via [@KumiliLeela](https://twitter.com/KumiliLeela).*
+
+---
+
+## AI Projects
+
+Things I'm building and shipping - experiments, tools, and prototypes at the intersection of AI and engineering practice. Built in public. Learning in public.
+
+---
+
+### [Project Name]
+*One-line description of what it does*
+
+**Why I built it:** The problem it solves or the thing I wanted to understand better.
+
+**Stack:** e.g. Python · LangChain · OpenAI API · FastAPI · Docker
+
+**[GitHub →](https://github.com/leelakumili)**
+
+---
+
+*More projects shipping in 2026 - follow along on [Twitter](https://twitter.com/KumiliLeela) or [LinkedIn](https://www.linkedin.com/in/leelakumili/).*
+
+---
+
+## Speaking
+
+### Upcoming
+**Women in Tech Global Conference 2026** *(Virtual - May 12–15, 2026)*<br>
+*"Model Context Protocol for Humans: Applying AI System Design to Team Leadership"*
+
+What if leaders operated like well-designed AI systems - exposing the right context, tools, and guidance to make their teams autonomous rather than dependent? This talk maps Anthropic's Model Context Protocol architecture onto engineering leadership and makes the case for a fundamentally different operating model for engineering managers.
+
+---
+
+## About
+
+I'm Leela Kumili - Engineering Lead at Starbucks, where I work on the Rewards Platform: the distributed, cloud-native system behind one of the most-used loyalty programs in the world.
+
+Beyond building systems, I spend a lot of time thinking about how to build the people around them. I run informal 1:1s with my full team and peers, mentor engineers at various stages of their careers, and have spent years studying the real gap between being a strong technical lead and being a great engineering manager.
+
+I'm also an **AI Champion** at Starbucks, an **InfoQ Editor** covering distributed systems and architecture, and a conference speaker. My writing and talks focus on what actually happens in production - the incidents, the trade-offs, the decisions that don't show up in tutorials.
+
+I'm working toward my first Engineering Manager role in 2026. Everything I build and write is part of that journey - in public, with honesty, earning the seat.
+
+→ [LinkedIn](https://www.linkedin.com/in/leelakumili/) · [Medium](https://medium.com/@leela.kumili) · [Twitter](https://twitter.com/KumiliLeela) · [InfoQ](https://www.infoq.com/profile/Leela-Kumili/#news)
+
+---
+
+## Archive
+
+*Articles published on GitHub prior to 2026. Current writing lives on [The Engineer's Path newsletter](https://www.linkedin.com/newsletters/the-engineer-s-path-7166581395236294656/) and [Medium](https://medium.com/@leela.kumili).*
+
+<details>
+<summary>2025 Articles</summary>
+
+- [10 Microservice Anti-Patterns Every Engineer Must Avoid](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article15.md)
+- [The Engineer's Guide to Getting Buy-In and Driving Change](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article14.md)
+- [Introducing Model Context Protocol (MCP)](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article13.md)
+- [From Unit Tests to Chaos Testing: Optimizing Mocking Strategies for Microservices](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article12.md)
+- [The DNA of High-Quality Code: How Engineers Build Sustainable Software](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article11.md)
+- [The Evolution of Prompt Engineering: What Software Engineers Need to Know](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article10.md)
+- [The Collaboration Chapters](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article9.md)
+- [10 Essential Communication Patterns for Microservices](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article8.md)
+- [When Systems Hit a Traffic Jam: How to Handle Backpressure Effectively](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article7.md)
+- [From Chaos to Control: How to Manage Transactions in Event-Driven Systems](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article6.md)
+- [DeepSeek: Innovation Born from Necessity](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article5.md)
+- [Building the Baseline – The Foundation of Observability](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article4.md)
+- [AI at Work: Leveraging Tools Without Crossing Boundaries](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article3.md)
+- [From MVP to MAC: The Future of Building Products Customers Love](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article2.md)
+- [Scaling Microservices: Message-Driven vs Event-Driven Architecture](https://github.com/leelakumili/leelakumili.github.io/blob/main/2025/article1.md)
+
+</details>
+
+<details>
+<summary>2024 Articles</summary>
+
+- [Looking Ahead to 2025: Building on the Lessons of 2024](https://github.com/leelakumili/leelakumili.github.io/blob/main/article9.md)
+- [Unwrapping Lessons from 2024: A Holiday Guide for Engineers](https://github.com/leelakumili/leelakumili.github.io/blob/main/article8.md)
+- [Keeping Databases Lean with TTL](https://github.com/leelakumili/leelakumili.github.io/blob/main/article7.md)
+- [What is Collaboration?](https://github.com/leelakumili/leelakumili.github.io/blob/main/article6.md)
+- [The Power of Kafka Keys: Why Choosing the Right One Matters](https://github.com/leelakumili/leelakumili.github.io/blob/main/article5.md)
+- [Five Years Brewing: A Starbucks Memoir](https://github.com/leelakumili/leelakumili.github.io/blob/main/article4.md)
+- [How to Optimize Backend Service Performance Using API Path Patterns](https://github.com/leelakumili/leelakumili.github.io/blob/main/article3.md)
+- [Building a Platform from the Ground Up: Key Lessons from My Greenfield Journey](https://github.com/leelakumili/leelakumili.github.io/blob/main/article2.md)
+- [Is Event-Driven Architecture a One-Size-Fits-All Solution for Microservices?](https://github.com/leelakumili/leelakumili.github.io/blob/main/article1.md)
+
+</details>
