@@ -2,7 +2,7 @@
 
 **Engineering Lead → Engineering Manager** · Distributed Systems · AI in Production · Platform Engineering
 
-I build the systems that power scale — and the teams that keep them running.
+I build the systems that power scale - and the teams that keep them running.
 
 Lead Engineer at **Starbucks** (Rewards Platform) · AI Champion · [InfoQ Editor](https://www.infoq.com/profile/Leela-Kumili/#news) · Conference Speaker · Creator of **[The Engineer's Path](https://www.linkedin.com/newsletters/the-engineer-s-path-7166581395236294656/)** newsletter
 
@@ -13,8 +13,7 @@ Lead Engineer at **Starbucks** (Rewards Platform) · AI Champion · [InfoQ Edito
 [LinkedIn](https://www.linkedin.com/in/leelakumili/) · [Medium](https://medium.com/@leela.kumili) · [Twitter / X](https://twitter.com/KumiliLeela) · [InfoQ](https://www.infoq.com/profile/Leela-Kumili/#news)
 
 ---
-
-## 📬 The Engineer's Path — Newsletter
+## 📬 The Engineer's Path - Newsletter
 
 Weekly writing for engineers navigating the gap between senior IC and engineering manager.
 Technical depth. Leadership honesty. No fluff.
@@ -29,8 +28,7 @@ Technical depth. Leadership honesty. No fluff.
 
 ## AI Projects
 
-Things I'm building and shipping — experiments, tools, and prototypes at the intersection of AI and engineering practice. Built in public. Learning in public.
-
+Things I'm building and shipping - experiments, tools, and prototypes at the intersection of AI and engineering practice. Built in public. Learning in public.
 ---
 
 ### [Project Name]
@@ -44,13 +42,15 @@ Things I'm building and shipping — experiments, tools, and prototypes at the i
 
 ---
 
-*More projects shipping in 2026 — follow along on [Twitter](https://twitter.com/KumiliLeela) or [LinkedIn](https://www.linkedin.com/in/leelakumili/).*
+
 
 ---
 
 ## Speaking
 
 ### Upcoming
+What if leaders operated like well-designed AI systems - exposing the right context, tools, and guidance to make their teams autonomous rather than dependent? This talk maps Anthropic's Model Context Protocol architecture onto engineering leadership and makes the case for a fundamentally different operating model for engineering managers.
+=======
 **Women in Tech Global Conference 2026** *(Virtual — May 12–15, 2026)*<br>
 *"Model Context Protocol for Humans: Applying AI System Design to Team Leadership"*
 
@@ -60,6 +60,15 @@ What if leaders operated like well-designed AI systems — exposing the right co
 
 ## About
 
+
+I'm Leela Kumili - Engineering Lead at Starbucks, where I work on the Rewards Platform: the distributed, cloud-native system behind one of the most-used loyalty programs in the world.
+
+Beyond building systems, I spend a lot of time thinking about how to build the people around them. I run informal 1:1s with my full team and peers, mentor engineers at various stages of their careers, and have spent years studying the real gap between being a strong technical lead and being a great engineering manager.
+
+I'm also an **AI Champion** at Starbucks, an **InfoQ Editor** covering distributed systems and architecture, and a conference speaker. My writing and talks focus on what actually happens in production - the incidents, the trade-offs, the decisions that don't show up in tutorials.
+
+I'm working toward my first Engineering Manager role in 2026. Everything I build and write is part of that journey - in public, with honesty, earning the seat.
+=======
 I'm Leela Kumili — Engineering Lead at Starbucks, where I work on the Rewards Platform: the distributed, cloud-native system behind one of the most-used loyalty programs in the world.
 
 Beyond building systems, I spend a lot of time thinking about how to build the people around them. I run informal 1:1s with my full team and peers, mentor engineers at various stages of their careers, and have spent years studying the real gap between being a strong technical lead and being a great engineering manager.
@@ -67,6 +76,7 @@ Beyond building systems, I spend a lot of time thinking about how to build the p
 I'm also an **AI Champion** at Starbucks, an **InfoQ Editor** covering distributed systems and architecture, and a conference speaker. My writing and talks focus on what actually happens in production — the incidents, the trade-offs, the decisions that don't show up in tutorials.
 
 I'm working toward my first Engineering Manager role in 2026. Everything I build and write is part of that journey — in public, with honesty, earning the seat.
+
 
 → [LinkedIn](https://www.linkedin.com/in/leelakumili/) · [Medium](https://medium.com/@leela.kumili) · [Twitter](https://twitter.com/KumiliLeela) · [InfoQ](https://www.infoq.com/profile/Leela-Kumili/#news)
 
@@ -111,3 +121,4 @@ I'm working toward my first Engineering Manager role in 2026. Everything I build
 - [Is Event-Driven Architecture a One-Size-Fits-All Solution for Microservices?](https://github.com/leelakumili/leelakumili.github.io/blob/main/article1.md)
 
 </details>
+
