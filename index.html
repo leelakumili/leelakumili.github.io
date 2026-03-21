@@ -358,6 +358,100 @@
       margin-bottom: 2.5rem;
     }
 
+    /* ─── ANCHOR LINKS ─── */
+    .section-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .anchor-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: var(--text-faint);
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.15s, background 0.15s, color 0.15s;
+      flex-shrink: 0;
+    }
+
+    .section-title-wrap:hover .anchor-link,
+    .anchor-link:focus { opacity: 1; }
+
+    .anchor-link:hover {
+      background: var(--mist);
+      color: var(--amber);
+    }
+
+    /* dark section variant */
+    .about-section .anchor-link:hover {
+      background: rgba(200, 137, 42, 0.2);
+      color: var(--gold);
+    }
+
+    /* ─── PROJECT CARD ANCHOR + SHARE ─── */
+    .project-card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      background: transparent;
+      color: var(--text-faint);
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.15s, background 0.15s, color 0.15s;
+      flex-shrink: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .project-card:hover .project-share-btn { opacity: 1; }
+
+    .project-share-btn:hover {
+      background: var(--linen);
+      color: var(--amber);
+    }
+
+    .share-tooltip {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      background: var(--espresso);
+      color: var(--cream);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 0.25rem 0.6rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 0.15s, transform 0.15s;
+    }
+
+    .project-share-btn.copied .share-tooltip,
+    .project-share-btn:hover .share-tooltip {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     /* ─── NEWSLETTER / WRITING ─── */
     .writing-section { background: white; }
 
@@ -890,7 +984,12 @@
     <div class="section-inner">
       <div class="reveal">
         <p class="section-eyebrow">The Engineer's Path</p>
-        <h2 class="section-title">Where I write.</h2>
+        <div class="section-title-wrap">
+          <h2 class="section-title">Where I write.</h2>
+          <a href="#writing" class="anchor-link" title="Link to this section">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </a>
+        </div>
         <p class="section-sub">
           Weekly on LinkedIn. Cross-posted to Medium and Twitter. All InfoQ articles syndicated via <a href="https://twitter.com/KumiliLeela" style="color:var(--amber);text-decoration:none;" target="_blank">@KumiliLeela</a>.
           No fluff. Just the thinking that doesn't fit in a Slack thread.
@@ -954,7 +1053,12 @@
     <div class="section-inner">
       <div class="reveal">
         <p class="section-eyebrow">AI Projects</p>
-        <h2 class="section-title">Things I'm building.</h2>
+        <div class="section-title-wrap">
+          <h2 class="section-title">Things I'm building.</h2>
+          <a href="#projects" class="anchor-link" title="Link to this section">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </a>
+        </div>
         <p class="section-sub">
           Experiments, tools, and prototypes at the intersection of AI and engineering practice.
           Built in public. Shared as I go.
@@ -983,10 +1087,35 @@
         </div>
         -->
 
-        <!-- Placeholder card - remove once first real project is added -->
+        <!-- Birthday Countdown Game Pack -->
+        <div class="project-card" id="birthday-countdown">
+          <span class="project-status status-live">Live</span>
+          <div class="project-card-header">
+            <h3 class="project-name">Birthday Countdown Game Pack</h3>
+            <button class="project-share-btn" onclick="shareProject('birthday-countdown', this)" title="Copy link to this project">
+              <span class="share-tooltip">Copy link</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </button>
+          </div>
+          <p class="project-blurb">An offline-first birthday countdown platform where one game unlocks per day, ending on the birthday with a real-world clue hunt. Fully rethemeable for any child, any theme, no installs required.</p>
+          <p class="project-why">Built for my daughter's 10th birthday using GitHub Copilot. The interesting part turned out to be the master prompt template I designed: standardize the context, get consistent output. Same discipline I apply to microservices at Starbucks, applied to a very personal problem.</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">Vanilla JS</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">Offline-first</span>
+            <span class="stack-tag">GitHub Copilot</span>
+          </div>
+          <a href="https://github.com/leelakumili/birthday-countdown-gamepack" target="_blank" class="project-link">
+            View on GitHub
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Placeholder - remove once next project is added -->
         <div class="project-card placeholder">
           <div class="placeholder-icon">◈</div>
-          <p class="placeholder-text">First project shipping soon.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
+          <p class="placeholder-text">More projects shipping in 2026.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
         </div>
 
       </div>
@@ -998,7 +1127,12 @@
     <div class="section-inner">
       <div class="reveal">
         <p class="section-eyebrow">Speaking</p>
-        <h2 class="section-title">On stage.</h2>
+        <div class="section-title-wrap">
+          <h2 class="section-title">On stage.</h2>
+          <a href="#speaking" class="anchor-link" title="Link to this section">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </a>
+        </div>
       </div>
 
       <div class="talk-card reveal">
@@ -1021,7 +1155,12 @@
     <div class="about-inner">
       <div class="reveal">
         <p class="section-eyebrow">About</p>
-        <h2 class="section-title">The person behind the systems.</h2>
+        <div class="section-title-wrap">
+          <h2 class="section-title">The person behind the systems.</h2>
+          <a href="#about" class="anchor-link" title="Link to this section">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </a>
+        </div>
         <div class="about-body">
           <p>
             I'm Leela Kumili, Engineering Lead at <strong>Starbucks</strong>, where I work on the Rewards Platform:
@@ -1161,6 +1300,37 @@
       { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     );
     reveals.forEach(el => observer.observe(el));
+
+    // Share project link — copies anchor URL to clipboard
+    function shareProject(id, btn) {
+      const url = `${location.origin}${location.pathname}#${id}`;
+      navigator.clipboard.writeText(url).then(() => {
+        const tip = btn.querySelector('.share-tooltip');
+        tip.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          tip.textContent = 'Copy link';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+
+    // Section anchor links — update tooltip on copy
+    document.querySelectorAll('.anchor-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = `${location.origin}${location.pathname}${link.getAttribute('href')}`;
+        navigator.clipboard.writeText(url).then(() => {
+          const orig = link.title;
+          link.title = 'Copied!';
+          history.pushState(null, '', link.getAttribute('href'));
+          setTimeout(() => link.title = orig, 2000);
+        });
+        // Also scroll to the section
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
   </script>
 </body>
 </html>
