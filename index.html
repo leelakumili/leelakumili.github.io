@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leela Kumili - Engineering Lead, Writer, Builder</title>
+  <title>Leela Kumili — Engineering Lead, Writer, Builder</title>
   <meta name="description" content="Engineering Lead at Starbucks. AI Champion. InfoQ Editor. Creator of The Engineer's Path newsletter. Writing about distributed systems, AI in production, and what it actually takes to lead engineering teams." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -101,17 +101,31 @@
     /* ─── HERO ─── */
     .hero {
       position: relative;
-      padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem) clamp(3rem, 7vw, 6rem);
+      padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem) clamp(3rem, 6vw, 5rem);
       overflow: hidden;
+    }
+
+    /* subtle dot-grid in upper-right background */
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 380px; height: 380px;
+      background-image: radial-gradient(circle, var(--mist) 1.5px, transparent 1.5px);
+      background-size: 22px 22px;
+      opacity: 0.7;
+      pointer-events: none;
+      mask-image: radial-gradient(ellipse at top right, black 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at top right, black 30%, transparent 75%);
     }
 
     .hero-inner {
       max-width: 1100px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: end;
+      grid-template-columns: 55fr 45fr;
+      gap: 4rem;
+      align-items: start;
     }
 
     .hero-label {
@@ -120,15 +134,15 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--amber);
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
     }
 
     .hero h1 {
       font-family: var(--serif);
-      font-size: clamp(3rem, 6vw, 5.5rem);
-      line-height: 1.05;
+      font-size: clamp(2.6rem, 4.5vw, 4.2rem);
+      line-height: 1.08;
       color: var(--espresso);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .hero h1 em {
@@ -137,18 +151,18 @@
     }
 
     .hero-desc {
-      font-size: 1.05rem;
+      font-size: 1rem;
       color: var(--text-soft);
-      max-width: 440px;
+      max-width: 420px;
       line-height: 1.75;
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
     }
 
     .hero-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
     }
 
     .tag {
@@ -209,58 +223,76 @@
       color: var(--amber);
     }
 
-    /* Hero right - decorative side */
+    /* Hero right — decorative side */
     .hero-aside {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      gap: 2rem;
+      align-items: stretch;
+      gap: 0;
+      padding-top: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-aside-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 1rem;
+      padding-left: 1rem;
     }
 
     .hero-stat-stack {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 0;
       width: 100%;
-      max-width: 280px;
+      border: 1px solid var(--mist);
+      border-radius: 4px;
+      overflow: hidden;
+      background: white;
     }
 
     .hero-stat {
       background: white;
-      border: 1px solid var(--mist);
-      padding: 1.25rem 1.5rem;
-      border-radius: 3px;
+      border-bottom: 1px solid var(--mist);
+      padding: 1rem 1.25rem 1rem 1.5rem;
       position: relative;
       overflow: hidden;
-      transition: border-color 0.2s, transform 0.2s;
+      transition: background 0.18s;
     }
 
-    .hero-stat:hover {
-      border-color: var(--amber);
-      transform: translateX(-3px);
-    }
+    .hero-stat:last-child { border-bottom: none; }
+
+    .hero-stat:hover { background: var(--linen); }
 
     .hero-stat::before {
       content: '';
       position: absolute;
       left: 0; top: 0; bottom: 0;
       width: 3px;
-      background: var(--amber);
+      background: transparent;
+      transition: background 0.18s;
     }
 
+    .hero-stat:hover::before { background: var(--amber); }
+
     .stat-label {
-      font-size: 0.7rem;
-      font-weight: 600;
+      font-size: 0.66rem;
+      font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--text-faint);
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
     }
 
     .stat-value {
       font-family: var(--serif);
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: var(--espresso);
+      line-height: 1.3;
     }
 
     /* ─── SECTION COMMON ─── */
@@ -793,7 +825,7 @@
         <p class="hero-label">Engineering Lead · Starbucks</p>
         <h1>Building systems<br>and the teams<br>that run <em>them.</em></h1>
         <p class="hero-desc">
-          I work at the intersection of distributed systems and engineering leadership -
+          I work at the intersection of distributed systems and engineering leadership —
           writing and speaking about what actually happens in production, and what it takes to lead people through it.
         </p>
         <div class="hero-tags">
@@ -813,6 +845,7 @@
       </div>
 
       <div class="hero-aside">
+        <p class="hero-aside-label">At a glance</p>
         <div class="hero-stat-stack">
           <div class="hero-stat">
             <div class="stat-label">Current role</div>
@@ -827,8 +860,12 @@
             <div class="stat-value">The Engineer's Path newsletter</div>
           </div>
           <div class="hero-stat">
-            <div class="stat-label">Next up</div>
-            <div class="stat-value">Women in Tech Global Conference 2026</div>
+            <div class="stat-label">Speaking</div>
+            <div class="stat-value">Women in Tech Global Conference · May 2026</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-label">Goal</div>
+            <div class="stat-value">Engineering Manager · 2026</div>
           </div>
         </div>
       </div>
@@ -843,7 +880,7 @@
         <h2 class="section-title">Where I write.</h2>
         <p class="section-sub">
           Weekly on LinkedIn. Cross-posted to Medium and Twitter. All InfoQ articles syndicated via <a href="https://twitter.com/KumiliLeela" style="color:var(--amber);text-decoration:none;" target="_blank">@KumiliLeela</a>.
-          No fluff - just the thinking that doesn't fit in a Slack thread.
+          No fluff — just the thinking that doesn't fit in a Slack thread.
         </p>
       </div>
 
@@ -851,22 +888,22 @@
         <div class="pillar-card">
           <div class="pillar-number">01</div>
           <div class="pillar-title">Distributed Systems & Platform Engineering</div>
-          <div class="pillar-desc">Technical authority from Starbucks-scale production - Kafka, microservices, failure modes, platform discipline.</div>
+          <div class="pillar-desc">Technical authority from Starbucks-scale production — Kafka, microservices, failure modes, platform discipline.</div>
         </div>
         <div class="pillar-card">
           <div class="pillar-number">02</div>
           <div class="pillar-title">AI in Production</div>
-          <div class="pillar-desc">Operational depth from an AI Champion's vantage point - LLMOps, inference costs, RAG at scale, what breaks in the real world.</div>
+          <div class="pillar-desc">Operational depth from an AI Champion's vantage point — LLMOps, inference costs, RAG at scale, what breaks in the real world.</div>
         </div>
         <div class="pillar-card">
           <div class="pillar-number">03</div>
           <div class="pillar-title">Engineering Leadership</div>
-          <div class="pillar-desc">The thinking that closes the gap between Lead and Manager - 1:1s, feedback, psychological safety as an engineering metric.</div>
+          <div class="pillar-desc">The thinking that closes the gap between Lead and Manager — 1:1s, feedback, psychological safety as an engineering metric.</div>
         </div>
         <div class="pillar-card">
           <div class="pillar-number">04</div>
           <div class="pillar-title">Career Growth & Craft</div>
-          <div class="pillar-desc">For engineers navigating the IC-to-Lead-to-EM path - the conversations, the decisions, the things no one tells you directly.</div>
+          <div class="pillar-desc">For engineers navigating the IC-to-Lead-to-EM path — the conversations, the decisions, the things no one tells you directly.</div>
         </div>
       </div>
     </div>
@@ -933,7 +970,7 @@
         </div>
         -->
 
-        <!-- Placeholder card - remove once first real project is added -->
+        <!-- Placeholder card — remove once first real project is added -->
         <div class="project-card placeholder">
           <div class="placeholder-icon">◈</div>
           <p class="placeholder-text">First project shipping soon.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
@@ -957,7 +994,7 @@
           <p class="talk-conf">Women in Tech Global Conference · Virtual · May 12–15, 2026</p>
           <h3 class="talk-title">Model Context Protocol for Humans: Applying AI System Design to Team Leadership</h3>
           <p class="talk-desc">
-            What if leaders operated like well-designed AI systems - exposing the right context, tools, and guidance
+            What if leaders operated like well-designed AI systems — exposing the right context, tools, and guidance
             to make their teams autonomous rather than dependent? This talk maps Anthropic's Model Context Protocol
             architecture onto engineering leadership and makes the case for a fundamentally different operating model for engineering managers.
           </p>
@@ -974,7 +1011,7 @@
         <h2 class="section-title">The person behind the systems.</h2>
         <div class="about-body">
           <p>
-            I'm Leela Kumili - Engineering Lead at <strong>Starbucks</strong>, where I work on the Rewards Platform:
+            I'm Leela Kumili — Engineering Lead at <strong>Starbucks</strong>, where I work on the Rewards Platform:
             the distributed, cloud-native system behind one of the most-used loyalty programs in the world.
           </p>
           <p>
@@ -985,12 +1022,12 @@
           <p>
             I'm also an <strong>AI Champion</strong> at Starbucks, an <strong>InfoQ Editor</strong> covering
             distributed systems and architecture, and a conference speaker.
-            My writing and talks focus on what happens in production - the incidents, the trade-offs, the decisions
+            My writing and talks focus on what happens in production — the incidents, the trade-offs, the decisions
             that don't show up in tutorials.
           </p>
           <p>
             I'm working toward my first Engineering Manager role in 2026. Everything I build and write is part of
-            that journey - in public, with honesty, earning the seat.
+            that journey — in public, with honesty, earning the seat.
           </p>
         </div>
       </div>
@@ -1030,7 +1067,7 @@
             </div>
             <div>
               <div class="about-link-label">InfoQ</div>
-              <div class="about-link-sub">Editor - Distributed Systems & Architecture</div>
+              <div class="about-link-sub">Editor — Distributed Systems & Architecture</div>
             </div>
           </a>
         </div>
@@ -1063,7 +1100,7 @@
             <li><a href="2025/article7.md">When Systems Hit a Traffic Jam: How to Handle Backpressure Effectively</a></li>
             <li><a href="2025/article6.md">From Chaos to Control: Managing Transactions in Event-Driven Systems</a></li>
             <li><a href="2025/article5.md">DeepSeek: Innovation Born from Necessity</a></li>
-            <li><a href="2025/article4.md">Building the Baseline - The Foundation of Observability</a></li>
+            <li><a href="2025/article4.md">Building the Baseline — The Foundation of Observability</a></li>
             <li><a href="2025/article3.md">AI at Work: Leveraging Tools Without Crossing Boundaries</a></li>
             <li><a href="2025/article2.md">From MVP to MAC: The Future of Building Products Customers Love</a></li>
             <li><a href="2025/article1.md">Scaling Microservices: Message-Driven vs Event-Driven Architecture</a></li>
