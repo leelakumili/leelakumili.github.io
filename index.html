@@ -109,7 +109,6 @@
       justify-content: center;
     }
 
-    /* subtle dot-grid in upper-right background */
     .hero::after {
       content: '';
       position: absolute;
@@ -227,7 +226,6 @@
       color: var(--amber);
     }
 
-    /* Hero right - decorative side */
     .hero-aside {
       display: flex;
       flex-direction: column;
@@ -269,7 +267,6 @@
     }
 
     .hero-stat:last-child { border-bottom: none; }
-
     .hero-stat:hover { background: var(--linen); }
 
     .hero-stat::before {
@@ -299,7 +296,7 @@
       line-height: 1.3;
     }
 
-    /* ─── HERO → WRITING DIVIDER ─── */
+    /* ─── HERO DIVIDER ─── */
     .hero-divider {
       height: 1px;
       background: linear-gradient(to right, var(--amber) 0%, var(--mist) 40%, transparent 100%);
@@ -358,7 +355,6 @@
       margin-bottom: 2.5rem;
     }
 
-    /* ─── ANCHOR LINKS ─── */
     .section-title-wrap {
       display: flex;
       align-items: center;
@@ -388,13 +384,12 @@
       color: var(--amber);
     }
 
-    /* dark section variant */
     .about-section .anchor-link:hover {
       background: rgba(200, 137, 42, 0.2);
       color: var(--gold);
     }
 
-    /* ─── PROJECT CARD ANCHOR + SHARE ─── */
+    /* ─── PROJECT CARD SHARE ─── */
     .project-card-header {
       display: flex;
       align-items: flex-start;
@@ -452,7 +447,7 @@
       transform: translateY(0);
     }
 
-    /* ─── NEWSLETTER / WRITING ─── */
+    /* ─── WRITING ─── */
     .writing-section { background: white; }
 
     .pillars-grid {
@@ -495,7 +490,6 @@
       line-height: 1.6;
     }
 
-    /* Newsletter CTA strip */
     .newsletter-strip {
       background: var(--espresso);
       padding: 2.5rem clamp(1.5rem, 5vw, 4rem);
@@ -549,7 +543,7 @@
       border-color: var(--gold);
     }
 
-    /* ─── AI PROJECTS ─── */
+    /* ─── PROJECTS ─── */
     .projects-section { background: var(--linen); }
 
     .projects-grid {
@@ -740,7 +734,6 @@
 
     .about-section .section-eyebrow { color: var(--gold); }
     .about-section .section-eyebrow::before { background: var(--gold); }
-
     .about-section .section-title { color: var(--cream); }
 
     .about-body {
@@ -750,7 +743,6 @@
     }
 
     .about-body p + p { margin-top: 1rem; }
-
     .about-body strong { color: var(--gold); font-weight: 600; }
 
     .about-links {
@@ -833,7 +825,6 @@
     }
 
     details[open] summary::before { content: '−'; }
-
     details summary:hover { color: var(--amber); }
 
     .archive-list {
@@ -979,7 +970,7 @@
 
   <div class="hero-divider"></div>
 
-  <!-- NEWSLETTER / WRITING -->
+  <!-- WRITING -->
   <section class="writing-section" id="writing">
     <div class="section-inner">
       <div class="reveal">
@@ -1067,26 +1058,6 @@
 
       <div class="projects-grid reveal">
 
-        <!-- ─── TEMPLATE PROJECT CARD (duplicate & fill this block for each new project) ─── -->
-        <!--
-        <div class="project-card">
-          <span class="project-status status-live">Live</span>
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-blurb">One sentence: what it does and who it's for.</p>
-          <p class="project-why">Why I built it: the itch I needed to scratch, or the thing I wanted to understand.</p>
-          <div class="project-stack">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">OpenAI API</span>
-            <span class="stack-tag">FastAPI</span>
-            <span class="stack-tag">Docker</span>
-          </div>
-          <a href="https://github.com/leelakumili" target="_blank" class="project-link">
-            View on GitHub
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-        -->
-
         <!-- Birthday Countdown Game Pack -->
         <div class="project-card" id="birthday-countdown">
           <span class="project-status status-live">Live</span>
@@ -1112,7 +1083,29 @@
           </a>
         </div>
 
-        <!-- Placeholder - remove once next project is added -->
+        <!-- Local Finance AI Agent -->
+        <div class="project-card" id="finance-ai-agent">
+          <span class="project-status status-wip">Coming Soon</span>
+          <div class="project-card-header">
+            <h3 class="project-name">Local Finance AI Agent</h3>
+            <button class="project-share-btn" onclick="shareProject('finance-ai-agent', this)" title="Copy link to this project">
+              <span class="share-tooltip">Copy link</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </button>
+          </div>
+          <p class="project-blurb">One place to see your entire household. Income, spending, savings, subscriptions — across every account, both people, all in one view. Ask it questions in plain English. The data never leaves your laptop.</p>
+          <p class="project-why">I was tired of piecing together our finances from three bank statements, two credit cards, and an Excel sheet that was always out of date. Everything runs offline on my laptop. The data never leaves.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">Streamlit</span>
+            <span class="stack-tag">Ollama</span>
+            <span class="stack-tag">scikit-learn</span>
+            <span class="stack-tag">Offline-first</span>
+          </div>
+        </div>
+
+        <!-- Placeholder -->
         <div class="project-card placeholder">
           <div class="placeholder-icon">◈</div>
           <p class="placeholder-text">More projects shipping in 2026.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
@@ -1301,7 +1294,7 @@
     );
     reveals.forEach(el => observer.observe(el));
 
-    // Share project link — copies anchor URL to clipboard
+    // Share project link
     function shareProject(id, btn) {
       const url = `${location.origin}${location.pathname}#${id}`;
       navigator.clipboard.writeText(url).then(() => {
@@ -1315,7 +1308,7 @@
       });
     }
 
-    // Section anchor links — update tooltip on copy
+    // Section anchor links
     document.querySelectorAll('.anchor-link').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -1326,7 +1319,6 @@
           history.pushState(null, '', link.getAttribute('href'));
           setTimeout(() => link.title = orig, 2000);
         });
-        // Also scroll to the section
         const target = document.querySelector(link.getAttribute('href'));
         if (target) target.scrollIntoView({ behavior: 'smooth' });
       });
