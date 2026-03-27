@@ -597,6 +597,7 @@
     .status-shipping { background: #fef3cd; color: #9a6700; }
     .status-live     { background: #d4edda; color: #1a6632; }
     .status-wip      { background: #e8ddc8; color: #6b5040; }
+    .status-brewing  { background: #f3e8ff; color: #6b21a8; }
 
     .project-name {
       font-family: var(--serif);
@@ -1093,6 +1094,33 @@
               <span class="stack-tag">Ollama</span>
               <span class="stack-tag">scikit-learn</span>
               <span class="stack-tag">Offline-first</span>
+            </div>
+            <span class="project-link" style="visibility:hidden;" aria-hidden="true">
+              Placeholder
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-card" id="waypoint-mcp">
+          <span class="project-status status-brewing">Brewing</span>
+          <div class="project-card-header">
+            <h3 class="project-name">Waypoint</h3>
+            <button class="project-share-btn" onclick="shareProject('waypoint-mcp', this)" title="Copy link to this project">
+              <span class="share-tooltip">Copy link</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </button>
+          </div>
+          <p class="project-blurb">Waypoint is a production MCP server that gives AI agents a leader's view of the team: context, decisions, coaching prompts, and unblocking tools, all over a live HTTPS endpoint. You set the coordinates. The team flies.</p>
+          <p class="project-why">The best engineering leads don't manage the flight. They file the flightplan and step back. Waypoint is that operating model built into something real: not a framework or a slide deck, a protocol server you can actually connect to.</p>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">MCP SDK</span>
+              <span class="stack-tag">Fastify</span>
+              <span class="stack-tag">Notion API</span>
+              <span class="stack-tag">Railway</span>
+              <span class="stack-tag">Claude API</span>
             </div>
             <span class="project-link" style="visibility:hidden;" aria-hidden="true">
               Placeholder
