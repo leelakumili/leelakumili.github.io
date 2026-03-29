@@ -96,6 +96,33 @@
 
     .nav-links a:hover { color: var(--amber); }
 
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      width: 36px;
+      height: 36px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text-soft);
+      border-radius: 2px;
+      transition: transform 0.2s, opacity 0.2s;
+      transform-origin: center;
+    }
+
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
     .hero {
       position: relative;
       padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem) 1.75rem;
@@ -941,28 +968,46 @@
 
     .archive-section { background: white; }
 
+    .archive-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    details {
+      border: 1px solid var(--mist);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    details[open] { border-color: var(--amber); }
+
     details summary {
       cursor: pointer;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--text-soft);
       letter-spacing: 0.02em;
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--mist);
+      padding: 1.1rem 1.5rem;
       list-style: none;
       display: flex;
       align-items: center;
-      gap: 0.6rem;
-      transition: color 0.2s;
+      gap: 0.75rem;
+      transition: color 0.2s, background 0.2s;
       user-select: none;
+      background: white;
     }
+
+    details[open] summary { background: var(--linen); color: var(--espresso); }
 
     details summary::-webkit-details-marker { display: none; }
 
     details summary::before {
       content: '+';
       font-family: var(--serif);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: var(--amber);
       width: 20px;
       text-align: center;
@@ -975,24 +1020,27 @@
 
     .archive-list {
       list-style: none;
-      padding: 1rem 0 0 1.5rem;
+      padding: 0.5rem 0;
+      border-top: 1px solid var(--mist);
     }
 
     .archive-list li {
-      padding: 0.4rem 0;
+      padding: 0;
       border-bottom: 1px solid rgba(232, 221, 200, 0.5);
     }
 
     .archive-list li:last-child { border: none; }
 
     .archive-list a {
-      font-size: 0.88rem;
+      display: block;
+      font-size: 0.86rem;
       color: var(--text-soft);
       text-decoration: none;
-      transition: color 0.15s;
+      transition: color 0.15s, background 0.15s;
+      padding: 0.6rem 1.5rem;
     }
 
-    .archive-list a:hover { color: var(--amber); }
+    .archive-list a:hover { color: var(--amber); background: var(--linen); }
 
     footer {
       background: var(--roast);
@@ -1039,6 +1087,36 @@
       .talk-year     { font-size: 1.5rem; }
       .nav-links     { display: none; }
       .pillars-grid  { grid-template-columns: 1fr 1fr; }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0; right: 0;
+        background: rgba(250, 245, 234, 0.98);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--mist);
+        padding: 1rem 0 1.5rem;
+        gap: 0;
+        z-index: 99;
+      }
+
+      .nav-links.open li a {
+        display: block;
+        padding: 0.85rem clamp(1.5rem, 5vw, 4rem);
+        font-size: 0.9rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: var(--text-soft);
+        border-bottom: 1px solid var(--mist);
+      }
+
+      .nav-links.open li:last-child a { border-bottom: none; }
+
+      .nav-hamburger { display: flex; }
     }
 
     @media (max-width: 480px) {
@@ -1051,12 +1129,15 @@
   <header>
     <nav>
       <a href="#" class="nav-logo">Leela Kumili</a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#writing">Writing</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#speaking">Speaking</a></li>
         <li><a href="#about">About</a></li>
       </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
@@ -1116,7 +1197,7 @@
       <div class="reveal">
         <p class="section-eyebrow">The Engineer's Path</p>
         <div class="section-title-wrap">
-          <h2 class="section-title">Where I write.</h2>
+          <h2 class="section-title">Where the thinking lives.</h2>
           <a href="#writing" class="anchor-link" title="Link to this section">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
           </a>
@@ -1156,7 +1237,7 @@
     <div class="newsletter-strip-inner">
       <div class="newsletter-text">
         <h3>Read the newsletter</h3>
-        <p>Weekly. Free. Worth your Saturday morning.</p>
+        <p>Weekly. Free. Worth your Tuesday morning.</p>
       </div>
       <div class="newsletter-platforms">
         <a href="https://www.linkedin.com/newsletters/the-engineer-s-path-7166581395236294656/" target="_blank" class="platform-link">
@@ -1202,12 +1283,7 @@
           <button class="projects-tab-btn" role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" onclick="switchTab('work')">
             <span class="tab-dot"></span>
             Work Projects
-            <span class="tab-count">1</span>
-          </button>
-          <button class="projects-tab-btn" role="tab" aria-selected="false" aria-controls="panel-writing" id="tab-writing" onclick="switchTab('writing')">
-            <span class="tab-dot"></span>
-            Writing Projects
-            <span class="tab-count">1</span>
+            <span class="tab-count">2</span>
           </button>
         </div>
       </div>
@@ -1254,7 +1330,7 @@
         </div>
 
         <div class="project-card" id="visibility-engine">
-          <span class="project-status status-testing">Getting Decked Up</span>
+          <span class="project-status status-testing">In Use</span>
           <div class="project-card-header">
             <h3 class="project-name">Visibility Engine</h3>
             <button class="project-share-btn" onclick="shareProject('visibility-engine', this)" title="Copy link to this project">
@@ -1289,7 +1365,7 @@
             </button>
           </div>
           <p class="project-blurb">One place to see your entire household. Income, spending, savings, subscriptions — across every account, both people, all in one view. Ask it questions in plain English. The data never leaves your laptop.</p>
-          <p class="project-why">I was tired of piecing together our finances from three bank statements, two credit cards, and an Excel sheet that was always out of date. Everything runs offline on my laptop. The data never leaves.</p>
+          <p class="project-why">I was tired of piecing together our finances from three bank statements, two credit cards, and an Excel sheet that was always out of date. Privacy-first by design: categorization and pattern detection run entirely on-device using scikit-learn, no cloud calls required.</p>
           <div class="project-footer">
             <p class="project-related">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
@@ -1391,24 +1467,7 @@
           </div>
         </div>
 
-        <div class="project-card placeholder">
-          <div class="placeholder-icon">◈</div>
-          <p class="placeholder-text">More projects shipping in 2026.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
-        </div>
-        </div><!-- /projects-grid Work -->
-      </div><!-- /panel-work -->
-
-      <!-- Writing Projects Panel -->
-      <div class="projects-panel reveal" id="panel-writing" role="tabpanel" aria-labelledby="tab-writing">
-        <div class="projects-panel-header">
-          <div>
-            <p class="panel-title">Writing Projects</p>
-            <p class="panel-desc">Public writing and ongoing documentation of the IC-to-EM path — in real time, with honesty.</p>
-          </div>
-        </div>
-        <div class="projects-grid">
-
-        <div class="project-card" id="leading-in-public">
+        <div class="project-card work-project-card" id="leading-in-public">
           <span class="project-status status-live">Ongoing</span>
           <div class="project-card-header">
             <h3 class="project-name">Leading in Public</h3>
@@ -1442,8 +1501,9 @@
           <div class="placeholder-icon">◈</div>
           <p class="placeholder-text">More projects shipping in 2026.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
         </div>
-        </div><!-- /projects-grid Writing -->
-      </div><!-- /panel-writing -->
+        </div><!-- /projects-grid Work -->
+      </div><!-- /panel-work -->
+
 
     </div>
   </section>
@@ -1561,6 +1621,7 @@
           and <a href="https://medium.com/@leela.kumili" target="_blank" style="color:var(--amber);text-decoration:none;">Medium</a>.
         </p>
 
+        <div class="archive-accordion">
         <details>
           <summary>2025 Articles (15)</summary>
           <ul class="archive-list">
@@ -1657,6 +1718,21 @@
         });
         const target = document.querySelector(link.getAttribute('href'));
         if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const hamburger = document.getElementById('nav-hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
       });
     });
   </script>
