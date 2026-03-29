@@ -544,6 +544,128 @@
 
     .projects-section { background: var(--linen); }
 
+    /* ── Category tabs ── */
+    .projects-tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 2.5rem;
+      border-bottom: 2px solid var(--mist);
+      margin-top: 2rem;
+    }
+
+    .projects-tab-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      padding: 0.85rem 1.75rem;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.2s, border-color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      position: relative;
+    }
+
+    .projects-tab-btn .tab-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--mist);
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+
+    .projects-tab-btn:hover { color: var(--text-soft); }
+
+    .projects-tab-btn.active {
+      color: var(--espresso);
+      border-bottom-color: var(--amber);
+    }
+
+    .projects-tab-btn.active .tab-dot { background: var(--amber); }
+
+    .tab-count {
+      font-size: 0.68rem;
+      font-weight: 700;
+      background: var(--mist);
+      color: var(--text-faint);
+      border-radius: 10px;
+      padding: 0.1rem 0.45rem;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .projects-tab-btn.active .tab-count {
+      background: rgba(200, 137, 42, 0.15);
+      color: var(--amber);
+    }
+
+    .projects-panel {
+      display: none;
+    }
+    .projects-panel.active {
+      display: block;
+    }
+
+    /* Category banner inside panel */
+    .projects-panel-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 1.75rem;
+      flex-wrap: wrap;
+    }
+
+    .panel-title {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      color: var(--espresso);
+      margin-bottom: 0.3rem;
+    }
+
+    .panel-desc {
+      font-size: 0.85rem;
+      color: var(--text-faint);
+      max-width: 420px;
+      line-height: 1.6;
+    }
+
+    /* Work panel has a subtle espresso tint */
+    #panel-work {
+      background: linear-gradient(135deg, rgba(26,16,8,0.03) 0%, transparent 60%);
+      border-radius: 6px;
+      padding: 1.75rem 0 0;
+      margin: -0.5rem 0 0;
+    }
+
+    /* AI panel accent bar */
+    #panel-ai .panel-title::before {
+      content: '✦ ';
+      color: var(--amber);
+      font-style: normal;
+    }
+
+    #panel-work .panel-title::before {
+      content: '◈ ';
+      color: var(--bark);
+      font-style: normal;
+    }
+
+    .work-project-card {
+      border-left: 3px solid var(--bark) !important;
+    }
+
+    .work-project-card:hover {
+      border-left-color: var(--amber) !important;
+    }
+
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1059,7 +1181,7 @@
   <section class="projects-section" id="projects">
     <div class="section-inner">
       <div class="reveal">
-        <p class="section-eyebrow">AI Projects</p>
+        <p class="section-eyebrow">Projects</p>
         <div class="section-title-wrap">
           <h2 class="section-title">Things I'm building.</h2>
           <a href="#projects" class="anchor-link" title="Link to this section">
@@ -1067,12 +1189,38 @@
           </a>
         </div>
         <p class="section-sub">
-          Experiments, tools, and prototypes at the intersection of AI and engineering practice.
-          Built in public. Shared as I go.
+          From personal AI experiments to production systems at scale. Built in public. Shared as I go.
         </p>
+
+        <!-- Tab switcher -->
+        <div class="projects-tabs" role="tablist">
+          <button class="projects-tab-btn active" role="tab" aria-selected="true" aria-controls="panel-ai" id="tab-ai" onclick="switchTab('ai')">
+            <span class="tab-dot"></span>
+            AI Projects
+            <span class="tab-count">4</span>
+          </button>
+          <button class="projects-tab-btn" role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" onclick="switchTab('work')">
+            <span class="tab-dot"></span>
+            Work Projects
+            <span class="tab-count">1</span>
+          </button>
+          <button class="projects-tab-btn" role="tab" aria-selected="false" aria-controls="panel-writing" id="tab-writing" onclick="switchTab('writing')">
+            <span class="tab-dot"></span>
+            Writing Projects
+            <span class="tab-count">1</span>
+          </button>
+        </div>
       </div>
 
-      <div class="projects-grid reveal">
+      <!-- AI Projects Panel -->
+      <div class="projects-panel active reveal" id="panel-ai" role="tabpanel" aria-labelledby="tab-ai">
+        <div class="projects-panel-header">
+          <div>
+            <p class="panel-title">AI Projects</p>
+            <p class="panel-desc">Experiments, tools, and prototypes at the intersection of AI and engineering practice.</p>
+          </div>
+        </div>
+        <div class="projects-grid">
 
         <div class="project-card" id="birthday-countdown">
           <span class="project-status status-live">Live</span>
@@ -1195,7 +1343,24 @@
           </div>
         </div>
 
-        <div class="project-card" id="rewards-platform">
+        <div class="project-card placeholder">
+          <div class="placeholder-icon">◈</div>
+          <p class="placeholder-text">More projects shipping in 2026.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
+        </div>
+        </div><!-- /projects-grid AI -->
+      </div><!-- /panel-ai -->
+
+      <!-- Work Projects Panel -->
+      <div class="projects-panel reveal" id="panel-work" role="tabpanel" aria-labelledby="tab-work">
+        <div class="projects-panel-header">
+          <div>
+            <p class="panel-title">Work Projects</p>
+            <p class="panel-desc">Production work and public writing from my role as Engineering Lead at Starbucks.</p>
+          </div>
+        </div>
+        <div class="projects-grid">
+
+        <div class="project-card work-project-card" id="rewards-platform">
           <span class="project-status status-atscale">At Scale</span>
           <div class="project-card-header">
             <h3 class="project-name">Rewards Platform at Starbucks</h3>
@@ -1225,6 +1390,23 @@
             </a>
           </div>
         </div>
+
+        <div class="project-card placeholder">
+          <div class="placeholder-icon">◈</div>
+          <p class="placeholder-text">More projects shipping in 2026.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
+        </div>
+        </div><!-- /projects-grid Work -->
+      </div><!-- /panel-work -->
+
+      <!-- Writing Projects Panel -->
+      <div class="projects-panel reveal" id="panel-writing" role="tabpanel" aria-labelledby="tab-writing">
+        <div class="projects-panel-header">
+          <div>
+            <p class="panel-title">Writing Projects</p>
+            <p class="panel-desc">Public writing and ongoing documentation of the IC-to-EM path — in real time, with honesty.</p>
+          </div>
+        </div>
+        <div class="projects-grid">
 
         <div class="project-card" id="leading-in-public">
           <span class="project-status status-live">Ongoing</span>
@@ -1260,8 +1442,9 @@
           <div class="placeholder-icon">◈</div>
           <p class="placeholder-text">More projects shipping in 2026.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
         </div>
+        </div><!-- /projects-grid Writing -->
+      </div><!-- /panel-writing -->
 
-      </div>
     </div>
   </section>
 
@@ -1425,6 +1608,16 @@
   </footer>
 
   <script>
+    function switchTab(name) {
+      document.querySelectorAll('.projects-tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.id === 'tab-' + name);
+        btn.setAttribute('aria-selected', btn.id === 'tab-' + name);
+      });
+      document.querySelectorAll('.projects-panel').forEach(panel => {
+        panel.classList.toggle('active', panel.id === 'panel-' + name);
+      });
+    }
+
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(
       (entries) => {
