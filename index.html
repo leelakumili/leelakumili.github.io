@@ -384,13 +384,6 @@
       color: var(--gold);
     }
 
-    
-    .status-testing {
-      background: rgba(78, 124, 111, 0.1);
-      color: #3a6b5f;
-      border: 1px solid rgba(78, 124, 111, 0.3);
-    }
-
     .project-card-header {
       display: flex;
       align-items: flex-start;
@@ -601,10 +594,29 @@
       align-self: flex-start;
     }
 
-    .status-shipping { background: #fef3cd; color: #9a6700; }
-    .status-live     { background: #d4edda; color: #1a6632; }
-    .status-wip      { background: #e8ddc8; color: #6b5040; }
-    .status-brewing  { background: #f3e8ff; color: #6b21a8; }
+    .status-shipping  { background: #fef3cd; color: #9a6700; }
+    .status-live      { background: #d4edda; color: #1a6632; }
+    .status-wip       { background: #e8ddc8; color: #6b5040; }
+    .status-brewing   { background: #f3e8ff; color: #6b21a8; }
+    .status-atscale   { background: #1a1008; color: #e8ab4a; }
+
+    .project-related {
+      font-size: 0.75rem;
+      color: var(--text-faint);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .project-related a {
+      color: var(--amber);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .project-related a:hover { color: var(--bark); }
 
     .project-name {
       font-family: var(--serif);
@@ -1068,6 +1080,11 @@
           <p class="project-blurb">I built my daughter a birthday present instead of buying her one. Ten days, ten games, one unlocking each morning, ending with a clue hunt around the house to find her actual gift.</p>
           <p class="project-why">She was turning 10. I wanted her to feel the anticipation, not just get a thing. Along the way, I learned more about prompt discipline with GitHub Copilot than any work project taught me — turns out the same principle applies: give it the right context, get consistent output.</p>
           <div class="project-footer">
+            <p class="project-related">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Related reading:
+              <a href="2025/article10.md" target="_blank">The Evolution of Prompt Engineering</a>
+            </p>
             <div class="project-stack">
               <span class="stack-tag">HTML</span>
               <span class="stack-tag">Vanilla JS</span>
@@ -1082,6 +1099,32 @@
           </div>
         </div>
 
+          <div class="project-card" id="visibility-engine">
+          <span class="project-status status-testing">Getting Decked Up</span>
+          <div class="project-card-header">
+            <h3 class="project-name">Visibility Engine</h3>
+            <button class="project-share-btn" onclick="shareProject('visibility-engine', this)" title="Copy link to this project">
+              <span class="share-tooltip">Copy link</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </button>
+          </div>
+          <p class="project-blurb">Engineers do extraordinary work that no one sees — not because the work wasn't good, but because it wasn't narrated. Visibility Engine turns your raw weekly notes into a 1:1 talking point, a brag document entry organized by goal bucket, and a portfolio bullet. Five minutes on Monday. Everything else accumulates.</p>
+          <p class="project-why">I was spending review season trying to reconstruct three months of impact from memory. Half my highest-value work — unblocking teams, making the call no one wrote down, absorbing the friction so my engineers didn't have to — never showed up in a PR. I built this for myself first, then kept using it.</p>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">Streamlit</span>
+              <span class="stack-tag">Ollama</span>
+              <span class="stack-tag">SQLite</span>
+              <span class="stack-tag">Offline-first</span>
+            </div>
+            <span class="project-link" style="visibility:hidden;" aria-hidden="true">
+              Placeholder
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </div>
+        
         <div class="project-card" id="finance-ai-agent">
           <span class="project-status status-wip">Coming Soon</span>
           <div class="project-card-header">
@@ -1094,6 +1137,11 @@
           <p class="project-blurb">One place to see your entire household. Income, spending, savings, subscriptions — across every account, both people, all in one view. Ask it questions in plain English. The data never leaves your laptop.</p>
           <p class="project-why">I was tired of piecing together our finances from three bank statements, two credit cards, and an Excel sheet that was always out of date. Everything runs offline on my laptop. The data never leaves.</p>
           <div class="project-footer">
+            <p class="project-related">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Related reading:
+              <a href="2025/article3.md" target="_blank">AI at Work: Leveraging Tools Without Crossing Boundaries</a>
+            </p>
             <div class="project-stack">
               <span class="stack-tag">Python</span>
               <span class="stack-tag">FastAPI</span>
@@ -1121,6 +1169,11 @@
           <p class="project-blurb">Waypoint is a production MCP server that gives AI agents a leader's view of the team: context, decisions, coaching prompts, and unblocking tools, all over a live HTTPS endpoint. You set the coordinates. The team flies.</p>
           <p class="project-why">The best engineering leads don't manage the flight. They file the flightplan and step back. Waypoint is that operating model built into something real: not a framework or a slide deck, a protocol server you can actually connect to.</p>
           <div class="project-footer">
+            <p class="project-related">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Related reading:
+              <a href="2025/article13.md" target="_blank">Introducing Model Context Protocol (MCP)</a>
+            </p>
             <div class="project-stack">
               <span class="stack-tag">TypeScript</span>
               <span class="stack-tag">MCP SDK</span>
@@ -1136,29 +1189,64 @@
           </div>
         </div>
 
-        <div class="project-card" id="visibility-engine">
-          <span class="project-status status-testing">Getting Decked Up</span>
+        <div class="project-card" id="rewards-platform">
+          <span class="project-status status-atscale">At Scale</span>
           <div class="project-card-header">
-            <h3 class="project-name">Visibility Engine</h3>
-            <button class="project-share-btn" onclick="shareProject('visibility-engine', this)" title="Copy link to this project">
+            <h3 class="project-name">Rewards Platform at Starbucks</h3>
+            <button class="project-share-btn" onclick="shareProject('rewards-platform', this)" title="Copy link to this project">
               <span class="share-tooltip">Copy link</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
             </button>
           </div>
-          <p class="project-blurb">Engineers do extraordinary work that no one sees — not because the work wasn't good, but because it wasn't narrated. Visibility Engine turns your raw weekly notes into a 1:1 talking point, a brag document entry organized by goal bucket, and a portfolio bullet. Five minutes on Monday. Everything else accumulates.</p>
-          <p class="project-why">I was spending review season trying to reconstruct three months of impact from memory. Half my highest-value work — unblocking teams, making the call no one wrote down, absorbing the friction so my engineers didn't have to — never showed up in a PR. I built this for myself first, then kept using it.</p>
+          <p class="project-blurb">The distributed, cloud-native system behind one of the most-used loyalty programs in the world. I work on the platform that processes millions of transactions, coordinates real-time rewards, and has to be right every time a customer taps their app at the counter.</p>
+          <p class="project-why">The code is not public, but the lessons are. This is where I learned the difference between systems that work in a demo and systems that work at 6am on a Monday when the load spikes and three things are wrong at once.</p>
           <div class="project-footer">
+            <p class="project-related">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Related reading:
+              <a href="article4.md" target="_blank">Five Years Brewing: A Starbucks Memoir</a>
+            </p>
             <div class="project-stack">
-              <span class="stack-tag">Python</span>
-              <span class="stack-tag">Streamlit</span>
-              <span class="stack-tag">Ollama</span>
-              <span class="stack-tag">SQLite</span>
-              <span class="stack-tag">Offline-first</span>
+              <span class="stack-tag">Distributed Systems</span>
+              <span class="stack-tag">Cloud-Native</span>
+              <span class="stack-tag">Microservices</span>
+              <span class="stack-tag">Kafka</span>
+              <span class="stack-tag">Platform Engineering</span>
             </div>
-            <span class="project-link" style="visibility:hidden;" aria-hidden="true">
-              Placeholder
+            <a href="article4.md" target="_blank" class="project-link">
+              Read the story
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" id="leading-in-public">
+          <span class="project-status status-live">Ongoing</span>
+          <div class="project-card-header">
+            <h3 class="project-name">Leading in Public</h3>
+            <button class="project-share-btn" onclick="shareProject('leading-in-public', this)" title="Copy link to this project">
+              <span class="share-tooltip">Copy link</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </button>
+          </div>
+          <p class="project-blurb">A running record of how I think about leading engineering teams. Written across The Engineer's Path newsletter and InfoQ: on feedback, collaboration, getting buy-in, psychological safety, and what the IC-to-EM path actually looks like from inside it.</p>
+          <p class="project-why">Most leadership writing is written by people who have already made it. I'm writing mine while I'm still on the way. That is the only version I know how to write honestly.</p>
+          <div class="project-footer">
+            <p class="project-related">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Featured:
+              <a href="2025/article14.md" target="_blank">The Engineer's Guide to Getting Buy-In</a>
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">The Engineer's Path</span>
+              <span class="stack-tag">InfoQ</span>
+              <span class="stack-tag">Engineering Leadership</span>
+              <span class="stack-tag">EM Track</span>
+            </div>
+            <a href="https://www.linkedin.com/newsletters/the-engineer-s-path-7166581395236294656/" target="_blank" class="project-link">
+              Read the newsletter
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
         </div>
 
