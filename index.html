@@ -890,6 +890,50 @@
       color: var(--text-soft);
       line-height: 1.7;
       max-width: 580px;
+      margin-bottom: 1.25rem;
+    }
+
+    .talk-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.25rem;
+    }
+
+    .talk-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 0.55rem 1.1rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
+    }
+
+    .talk-link-primary {
+      background: var(--espresso);
+      color: var(--cream);
+      border: 1px solid var(--espresso);
+    }
+
+    .talk-link-primary:hover {
+      background: var(--bark);
+      border-color: var(--bark);
+      transform: translateY(-1px);
+    }
+
+    .talk-link-ghost {
+      background: white;
+      color: var(--text-soft);
+      border: 1px solid var(--mist);
+    }
+
+    .talk-link-ghost:hover {
+      border-color: var(--amber);
+      color: var(--amber);
     }
 
     .about-section {
@@ -1539,6 +1583,16 @@
             to make their teams autonomous rather than dependent? This talk maps Anthropic's Model Context Protocol
             architecture onto engineering leadership and makes the case for a fundamentally different operating model for engineering managers.
           </p>
+          <div class="talk-links">
+            <a href="https://www.youtube.com/watch?v=35vnqvSIV3A" target="_blank" class="talk-link talk-link-primary">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21.54 6.41A2.76 2.76 0 0 0 19.6 4.46C18.01 4 12 4 12 4s-6.01 0-7.6.46A2.76 2.76 0 0 0 2.46 6.41 28.7 28.7 0 0 0 2 12a28.7 28.7 0 0 0 .46 5.59 2.76 2.76 0 0 0 1.94 1.95C5.99 20 12 20 12 20s6.01 0 7.6-.46a2.76 2.76 0 0 0 1.94-1.95A28.7 28.7 0 0 0 22 12a28.7 28.7 0 0 0-.46-5.59zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+              Watch Recording
+            </a>
+            <a href="https://www.womentech.net/speaker/all/all/157798" target="_blank" class="talk-link talk-link-ghost">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Speaker Profile
+            </a>
+          </div>
         </div>
       </div>
     </div>
