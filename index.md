@@ -1,6 +1,6 @@
 # Leela Kumili
 
-**Engineering Lead → Engineering Manager** · Distributed Systems · AI in Production · Platform Engineering
+**Engineering Lead → Engineering Manager** · Distributed Systems · AI in Production · Platform Engineering.
 
 I build the systems that power scale - and the teams that keep them running.
 
