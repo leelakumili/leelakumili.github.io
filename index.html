@@ -944,6 +944,90 @@
       color: var(--amber);
     }
 
+    .journey-section { background: var(--linen); }
+
+    .timeline {
+      margin-top: 2.5rem;
+      max-width: 720px;
+    }
+
+    .timeline-entry {
+      display: grid;
+      grid-template-columns: 80px 24px 1fr;
+      gap: 0 1.25rem;
+    }
+
+    .timeline-year {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      color: var(--text-faint);
+      line-height: 1;
+      text-align: right;
+      padding-top: 0.1rem;
+    }
+
+    .timeline-marker {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .timeline-marker::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      background: var(--mist);
+    }
+
+    .timeline-entry:first-child .timeline-marker::before { top: 0.5rem; }
+
+    .timeline-entry:last-child .timeline-marker::before {
+      bottom: auto;
+      height: 0.5rem;
+    }
+
+    .timeline-dot {
+      position: relative;
+      z-index: 1;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--amber);
+      border: 2px solid var(--linen);
+      margin-top: 0.35rem;
+      flex-shrink: 0;
+    }
+
+    .timeline-entry.current .timeline-year { color: var(--amber); font-style: italic; }
+
+    .timeline-entry.current .timeline-dot {
+      background: var(--gold);
+      box-shadow: 0 0 0 4px rgba(232, 171, 74, 0.25);
+    }
+
+    .timeline-body { padding-bottom: 2.5rem; }
+
+    .timeline-entry:last-child .timeline-body { padding-bottom: 0; }
+
+    .timeline-title {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--espresso);
+      margin-bottom: 0.3rem;
+      padding-top: 0.15rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
     .about-section {
       background: var(--espresso);
       color: var(--cream);
@@ -1158,6 +1242,8 @@
       .about-inner   { grid-template-columns: 1fr; gap: 2.5rem; }
       .talk-card     { grid-template-columns: 1fr; gap: 0.5rem; }
       .talk-year     { font-size: 1.5rem; }
+      .timeline-entry { grid-template-columns: 52px 20px 1fr; gap: 0 0.9rem; }
+      .timeline-year  { font-size: 1.15rem; }
       .nav-links     { display: none; }
       .pillars-grid  { grid-template-columns: 1fr 1fr; }
 
@@ -1206,6 +1292,7 @@
         <li><a href="#writing">Writing</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#journey">Journey</a></li>
         <li><a href="#about">About</a></li>
       </ul>
       <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
@@ -1617,6 +1704,66 @@
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               Speaker Profile
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="journey-section" id="journey">
+    <div class="section-inner">
+      <div class="reveal">
+        <p class="section-eyebrow">Journey</p>
+        <div class="section-title-wrap">
+          <h2 class="section-title">Still on the way.</h2>
+          <a href="#journey" class="anchor-link" title="Link to this section">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </a>
+        </div>
+        <p class="section-sub">
+          The path from joining to leading, written the same way I write everything else: while it's still happening.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-entry reveal">
+          <div class="timeline-year">2019</div>
+          <div class="timeline-marker"><span class="timeline-dot"></span></div>
+          <div class="timeline-body">
+            <div class="timeline-title">Joined Starbucks</div>
+            <p class="timeline-desc">Rewards Platform — the first time I saw what "at scale" actually breaks, and the difference between systems that demo well and systems that survive a Monday morning load spike.</p>
+          </div>
+        </div>
+        <div class="timeline-entry reveal">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-marker"><span class="timeline-dot"></span></div>
+          <div class="timeline-body">
+            <div class="timeline-title">Started writing in public</div>
+            <p class="timeline-desc">Launched The Engineer's Path. The thinking that didn't fit in a Slack thread finally got somewhere to live.</p>
+          </div>
+        </div>
+        <div class="timeline-entry reveal">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-marker"><span class="timeline-dot"></span></div>
+          <div class="timeline-body">
+            <div class="timeline-title">InfoQ Editor</div>
+            <p class="timeline-desc">Joined InfoQ as an editor covering distributed systems and architecture.</p>
+          </div>
+        </div>
+        <div class="timeline-entry reveal">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-marker"><span class="timeline-dot"></span></div>
+          <div class="timeline-body">
+            <div class="timeline-title">Promoted to Lead Engineer · AI Champion</div>
+            <p class="timeline-desc">After two years of watching my highest-value work miss the room where decisions happen, I built the paper trail instead. It worked — then I open-sourced it as <a href="#seen" style="color:var(--amber);text-decoration:none;">Seen</a>. The same year, took on the AI Champion role at Starbucks.</p>
+          </div>
+        </div>
+        <div class="timeline-entry current reveal">
+          <div class="timeline-year">Now</div>
+          <div class="timeline-marker"><span class="timeline-dot"></span></div>
+          <div class="timeline-body">
+            <div class="timeline-title">The stage</div>
+            <p class="timeline-desc"><a href="https://www.youtube.com/watch?v=35vnqvSIV3A" target="_blank" style="color:var(--amber);text-decoration:none;">First talk</a> at Women in Tech Global.</p>
           </div>
         </div>
       </div>
