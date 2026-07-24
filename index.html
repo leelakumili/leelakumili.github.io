@@ -1443,7 +1443,7 @@
           <button class="projects-tab-btn active" role="tab" aria-selected="true" aria-controls="panel-ai" id="tab-ai" onclick="switchTab('ai')">
             <span class="tab-dot"></span>
             AI Projects
-            <span class="tab-count">4</span>
+            <span class="tab-count">5</span>
           </button>
           <button class="projects-tab-btn" role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" onclick="switchTab('work')">
             <span class="tab-dot"></span>
@@ -1592,6 +1592,37 @@
     </a>
   </div>
 </div>
+        <div class="project-card" id="ourcal">
+          <span class="project-status status-live">Live</span>
+          <div class="project-card-header">
+            <h3 class="project-name">OurCal</h3>
+            <button class="project-share-btn" onclick="shareProject('ourcal', this)" title="Copy link to this project">
+              <span class="share-tooltip">Copy link</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </button>
+          </div>
+          <p class="project-blurb">Every calendar from every Google account you own, merged into one agenda you can write back to: create, sync, reschedule and delete across any selection of accounts at once. The same appointment entered on four accounts shows up in Google as four unrelated events. OurCal collapses them into one row carrying every calendar's badge, because it treats identity as the appointment itself: title plus exact span, compared as instants rather than strings.</p>
+          <p class="project-why">Our family's day is scattered across Google accounts, and Google shows one at a time. Because the write path mutates real calendar data across accounts, it is built defensively: it patches only the fields you touched, validates before writing to any account, and one failing calendar never aborts the rest. Built at speed with an AI pair, held to production standards: 206 tests that run with no network, and a release pipeline that launches the built Mac app to confirm it starts before publishing. Everything stays on your own machine.</p>
+          <div class="project-footer">
+            <p class="project-related">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Download:
+              <a href="https://github.com/leelakumili/OurCal/releases" target="_blank">OurCal for macOS (.dmg)</a>
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Python (stdlib)</span>
+              <span class="stack-tag">Google Calendar API</span>
+              <span class="stack-tag">PyInstaller</span>
+              <span class="stack-tag">WKWebView</span>
+              <span class="stack-tag">GitHub Actions</span>
+              <span class="stack-tag">Local-first</span>
+            </div>
+            <a href="https://github.com/leelakumili/OurCal" target="_blank" class="project-link">
+              View on GitHub
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
         <div class="project-card placeholder">
           <div class="placeholder-icon">◈</div>
           <p class="placeholder-text">More projects shipping in 2026.<br>Follow <a href="https://twitter.com/KumiliLeela" target="_blank" style="color:var(--amber);">@KumiliLeela</a> for updates.</p>
